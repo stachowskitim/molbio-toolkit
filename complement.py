@@ -7,7 +7,7 @@ CLI = argparse.ArgumentParser(prog='gc_content', usage='%(prog)s [options]',
                               description='reverse complement')
 
 CLI.add_argument(
-    '-a',
+    '-i',
     type=str,
     default='GGG',
     help='string with no spaces'
@@ -15,7 +15,7 @@ CLI.add_argument(
 
 ARGS = CLI.parse_args()
 
-seq = ARGS.a
+seq = ARGS.i
 
 def complement(seq):
 	split = []

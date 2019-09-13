@@ -7,7 +7,7 @@ CLI = argparse.ArgumentParser(prog='translate', usage='%(prog)s [options]',
                               description='translate into amino acid sequence')
 
 CLI.add_argument(
-    '-a',
+    '-i',
     type=str,
     default='GGG',
     help='string with no spaces'
@@ -15,7 +15,7 @@ CLI.add_argument(
 
 ARGS = CLI.parse_args()
 
-seq = ARGS.a
+seq = ARGS.i
 
 table = ['UUUF','CUUL','AUUI','GUUV',
 'UUCF','CUCL','AUCI','GUCV',
