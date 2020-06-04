@@ -4,13 +4,13 @@
 import argparse
 import numpy as np
 
-CLI = argparse.ArgumentParser(prog='glycositesearch', usage='%(prog)s [options]',
-                              description='Find N-linked glyco sites, input FASTA code NOT seq')
+CLI = argparse.ArgumentParser(prog='proteinMW', usage='%(prog)s [options]',
+                              description='calculates molecular weight (MW) based on input aa seq')
 
 CLI.add_argument(
     '-i',
     type=str,
-    default='B5ZC00',
+    default='HELP',
     help='string with no spaces'
 )
 
