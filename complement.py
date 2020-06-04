@@ -3,7 +3,7 @@
 
 import argparse
 
-CLI = argparse.ArgumentParser(prog='gc_content', usage='%(prog)s [options]',
+CLI = argparse.ArgumentParser(prog='reverse complement', usage='%(prog)s [options]',
                               description='reverse complement')
 
 CLI.add_argument(
